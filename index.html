@@ -78,12 +78,39 @@
             </p>
 
             <h1>Especificações Técnicas</h1>
-            Tabela Técnica do Google Glass Mar/2013
 
-            Tela:Resolução equivalente a tela de 25"
-            Camera: 5MP para fotos / 720p para vídeos
-            Conectividade: Wi-Fi/ Bluetooth
-            Memória Interna: 12GB
+            <!--Criando tabela-->
+            <table id="tabela_spec">
+                <!-- Titulo da tabela-->
+                <caption>Tabela Técnica do Google Glass <span>Mar/2013 </span></caption>
+
+                <!--tr linhas da tabela-->
+                <tr>
+                    <!--td - table data dado de uma tabela cada td é um dado direferente-->
+                    <td class="col-esquerda">Tela</td>
+                    <td class="col-direita">Resolução equivalente a tela de 25"</td>
+                </tr>
+                <tr>
+                    <!--rowspan a celula vai utilizar mais de uma linha-->
+                    <td rowspan="2" class="col-esquerda">Camera</td>
+                    <td class="col-direita">5MP para fotos </td>
+                </tr>
+                <tr>
+                    <td class="col-direita" >720p para vídeos</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="col-esquerda">Conectividade</td>
+                    <td class="col-direita"> Wi-Fi</td>
+                </tr>
+                <tr>
+                    <td class="col-direita">Bluetooth</td>
+                </tr>
+                <tr>
+                    <td class="col-esquerda">Memória Interna</td>
+                    <td class="col-direita">12GB</td>
+                </tr>
+            </table>
+            <!--fim da tabela-->
 
             <h1>Como funciona</h1>
             <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na
@@ -142,10 +169,10 @@
         <!--Rodadapé-->
         <footer id="footer">
             <p>
-                Copyright 2013 - by Gustavo Guanabara <br/>
+                Copyright 2013 - by Gustavo Guanabara <br />
                 <!-- target _blank para que o link seja aberto em outra aba do navegador-->
-               <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a>  | 
-               <a href="http://twiter.com/cursosemvideo" target="_blank">Twitter</a>
+                <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> |
+                <a href="http://twiter.com/cursosemvideo" target="_blank">Twitter</a>
             </p>
         </footer>
     </div>

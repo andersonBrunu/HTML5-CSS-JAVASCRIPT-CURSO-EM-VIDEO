@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Titillium+Web&display=swap');
 
 
-@font-face{
+@font-face {
     font-family: Fonte_Logo;
     src: url("/_fontes/bubblegum-sans-regular.otf");
 }
@@ -21,7 +21,7 @@
 }
 
 /*Alterando o estilo do h1 dentro do cabeçalho*/
-#cabecalho h1{
+#cabecalho h1 {
     /*Alterando tipo da fote*/
     font-family: 'Fonte_Logo', sans-serif;
     /*Alterando tamanho da fonte*/
@@ -35,8 +35,9 @@
     margin-bottom: 0px;
 }
 
-#cabecalho h2{
-    font-family:'Titillium Web', sans-serif;;
+#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    ;
     color: #888888;
     font-size: 15pt;
     padding: 0px;
@@ -189,7 +190,7 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
 
 
 /*--------------Foramatação do corpo---------------*/
-#corpo{
+#corpo {
     /*Alterando display para block todo conteudo sera um bloco para ser posicionado em outro lugar da pagina*/
     display: block;
     /*Alterando o tamanho do corpo*/
@@ -202,19 +203,71 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
     padding-right: 15px;
 }
 
+/*formatando a tabela espc dentro do corpo da direita*/
+#tabela_spec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*formatando o titulo*/
+#tabela_spec caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+    
+}
+
+/*Alterando a data do lado do titulo*/
+#tabela_spec caption span{
+    display: block;
+    float: right;
+    color: #888888;
+    font-size: 8pt; 
+    margin-top: 10px;   
+}
+
+
+/*Alterando a formatação dos td*/
+#tabela_spec td {
+    border: 1px solid #606060;
+    /**Espacamento intero dos items*/
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Alterando o estilo dos td da esquerda da tabela*/
+#tabela_spec td.col-esquerda {
+
+    color: white;
+    background-color: #606060;
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+
+}
+/*Alterando o estilo dos td da direita da tabela*/
+#tabela_spec td.col-direita {
+    background-color: #cecece;
+    
+}
+
 /*----------------Formatação do aside  direito-------------*/
-#aside_direita{
+#aside_direita {
     display: block;
     width: 350px;
     float: right;
 }
 
 /*------------Foramatação do footer---------*/
-#footer{
+#footer {
     /**Para limpar a formatação e ficar  no final do conteudo*/
     clear: both;
     border-top: 1px solid #606060;
 }
-#footer p{
+
+#footer p {
     text-align: center;
 }
