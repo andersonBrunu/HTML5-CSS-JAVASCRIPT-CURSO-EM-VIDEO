@@ -186,3 +186,35 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
     /*Tempo de execução do hover*/
     transition: 0.5s;
 }
+
+
+/*--------------Foramatação do corpo---------------*/
+#corpo{
+    /*Alterando display para block todo conteudo sera um bloco para ser posicionado em outro lugar da pagina*/
+    display: block;
+    /*Alterando o tamanho do corpo*/
+    width: 520px;
+    /*Todo o conteudo ficara na esquerda com o tamanho de 520px*/
+    float: left;
+    /*Adicionando uma bordar para dividir*/
+    border-right: 1px solid #606060;
+    /*Espacamento do texto para a borda*/
+    padding-right: 15px;
+}
+
+/*----------------Formatação do aside  direito-------------*/
+#aside_direita{
+    display: block;
+    width: 350px;
+    float: right;
+}
+
+/*------------Foramatação do footer---------*/
+#footer{
+    /**Para limpar a formatação e ficar  no final do conteudo*/
+    clear: both;
+    border-top: 1px solid #606060;
+}
+#footer p{
+    text-align: center;
+}
