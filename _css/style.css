@@ -1,40 +1,116 @@
 @charset "UTF-8";
 
-body{
-    color: rgba(0,0,0,1);
+body {
+    color: rgba(0, 0, 0, 1);
 }
 
-p{
+p {
     text-align: justify;
     text-indent: 50px;
 }
 
 
-/* Formatação de imagens com legendas*/
-figure.foto-legenda{
+/* -----------Formatação de imagens com legendas----------------*/
+figure.foto-legenda {
     position: relative;
     border: 8px solid white;
-    box-shadow: 1px 1px 4px black ;
+    box-shadow: 1px 1px 4px black;
 }
 
-figure.foto-legenda img{
+figure.foto-legenda img {
     width: 100%;
     height: 100%;
 }
 
-figure.foto-legenda figcaption{
+figure.foto-legenda figcaption {
+    /*opacidade 0 para não aparecer a legenda por cima da imagem o tempo todo,
+     que combida com o hover no figcation logo abaixo*/
     opacity: 0;
+    /*posição absoluta dentro do pai de figcapiton que no caso é o figure*/
     position: absolute;
+    /*posicionamento da legenda no figcaption*/
     top: 0px;
-    background-color: rgba(0,0,0,0.4);
+    /*cor do fundo do figcaption preto com transparencia*/
+    background-color: rgba(0, 0, 0, 0.4);
+    /*cor do texto da legenda*/
     color: white;
+    /*width e height espaço quue o figcation vai utilizar no caso
+     todo o espaço onde ele esta todo o espaço do figure que é pai do figcation*/
     width: 100%;
     height: 100%;
+    /*espaçamento do texto da legenda das laterias*/
     padding: 10px;
+    /**/
     box-sizing: border-box;
+    /*tempo para a transição aparecer ao passar o mouse por cima*/
     transition: opacity 1s;
 }
 
-figure.foto-legenda:hover figcaption{
-    opacity: 1;     
+/*Efeito ai passar o mouse por cima da imagem*/
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+
+/*-------------------Formatação do menu-----------------*/
+
+
+#menu {
+    /*Menu vai ser exibito como um bloco permitindo ele flutuar*/
+    display: block;
+}
+
+#menu h1 {
+    /*tirando o h1 da visualizão da pagina*/
+    display: none;
+}
+
+#menu ul {
+    /*Tirando o estilo do ul*/
+    list-style: none;
+    /*botando todos os item da lista em letra maiuscula*/
+    text-transform: uppercase;
+    /*Posição absoluta pode ser movido em qual posição da pagina fora da tag pai*/
+    position: absolute;
+    /*posicionando da altura*/
+    top: -20px;
+    /*posicionamento lateral com 100px da esquerda*/
+    left: 100px;
+}
+
+#menu li {
+    /*Ordendo os lis na horizontal*/
+    display: inline-block;
+    /*alterando o fundo do li*/
+    background-color: #dddddd;
+    /*distancia interna dos items ou seja do nome que esta no centro para as partes laterais*/
+    padding: 10px;
+    /*distancia entre os items*/
+    margin: 2px;
+    /*alterando o tempo de execução do hover*/
+    transition: background-color 1s;
+}
+
+/*Adicionando efeito no li da lista ul quando passar o mouse por cima do item da lista*/
+#menu li:hover {
+    /*O efeito adicionando ao passar o mouse é a alteração da cor*/
+    background-color: #606060;
+}
+
+/*Adicionando efeito no a que esta dentro do li mudando a cor do nome,
+underline para quando passar o mouse adicionar o sublinhado na opção*/
+#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*Alterando o estilo da tag 'a' dentro do menu*/
+#menu a {
+    /*Mudando a cor do texto*/
+    color: black;
+    /*Tirando o decoration assim não exibira o sublinhado em baixo dos nomes,
+     apenas qunado passar o mouse por cima como foi deficino no hover*/
+    text-decoration: none;
+    /*Tempo de execução do hover*/
+    transition: 0.5s;
 }
