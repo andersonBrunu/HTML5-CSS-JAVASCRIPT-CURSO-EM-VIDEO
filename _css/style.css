@@ -52,7 +52,7 @@
     /*Alterando a distancia que a imagem vai ficar em relaão a altura*/
     top: 70px;
     /*Alterando a distancia que a imagem vai ficar  da esquerda*/
-    left: 930px;
+    left: 1000px;
 
 }
 
@@ -79,7 +79,16 @@ body {
 
 p {
     text-align: justify;
-    text-indent: 50px;
+    text-indent: 50px;  
+}
+
+a{
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 
@@ -191,16 +200,50 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
 
 /*--------------Foramatação do corpo---------------*/
 #corpo {
+    font-family: Arial,sans-serif;
     /*Alterando display para block todo conteudo sera um bloco para ser posicionado em outro lugar da pagina*/
     display: block;
     /*Alterando o tamanho do corpo*/
-    width: 520px;
+    width: 500px;
     /*Todo o conteudo ficara na esquerda com o tamanho de 520px*/
     float: left;
     /*Adicionando uma bordar para dividir*/
     border-right: 1px solid #606060;
     /*Espacamento do texto para a borda*/
     padding-right: 15px;
+}
+
+#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 5px 0px 5px 0px;
+}
+
+#cabecalho-de-artigo h1 {
+    font-family: 'Fonte_Logo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    background-color: #dddddd;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#cabecalho-de-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+}
+
+#cabecalho-de-artigo h3 {
+    font-size: 12pt;
+    color: #606060;
+
+}
+
+.direita{
+    text-align: right;
 }
 
 /*formatando a tabela espc dentro do corpo da direita*/
@@ -212,20 +255,20 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
 }
 
 /*formatando o titulo*/
-#tabela_spec caption{
+#tabela_spec caption {
     color: #888888;
     font-size: 13pt;
     font-weight: bolder;
-    
+
 }
 
 /*Alterando a data do lado do titulo*/
-#tabela_spec caption span{
+#tabela_spec caption span {
     display: block;
     float: right;
     color: #888888;
-    font-size: 8pt; 
-    margin-top: 10px;   
+    font-size: 8pt;
+    margin-top: 10px;
 }
 
 
@@ -248,10 +291,11 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
     font-weight: bold;
 
 }
+
 /*Alterando o estilo dos td da direita da tabela*/
 #tabela_spec td.col-direita {
     background-color: #cecece;
-    
+
 }
 
 /*----------------Formatação do aside  direito-------------*/
@@ -259,7 +303,28 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
     display: block;
     width: 350px;
     float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
+
+#aside_direita h1 {
+    font-family: 'Fonte_Logo',sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+
+}
+
+#aside_direita h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+
+}
+
 
 /*------------Foramatação do footer---------*/
 #footer {
