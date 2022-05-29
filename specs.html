@@ -1,23 +1,117 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
 
-[AQUI ENTRA UMA FOTO]
+<html lang="pt-br">
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<head>
+    <meta charset="UTF-8">
+    <title>Tudo Sobre Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/style.css">
+    <link rel="stylesheet" type="text/css" href="_css/spec.css">
+    <script src="_javascript/funcoes.js"></script>
 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+</head>
 
-Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
 
-[AQUI ENTRA UMA IMAGEM]
+<body>
 
-Copyright 2013 - by Gustavo Guanabara<
-Facebook | Twitter
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+
+            <img id="ic_oculos" src="_imagens/especificacoes.png" alt="">
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="1">
+                    <li onmouseover="mudaFoto('_imagens/home.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes.png')">
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes.png')">
+                        <a href="specs.html">
+                            Especificações
+                        </a>
+                    </li>
+
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes.png')">
+                        <a href="fotos.html">
+                            Fotos
+                        </a>
+                    </li>
+
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes.png')">
+                        <a href="multimidia.html"> Multimídia
+                        </a>
+                    </li>
+
+                    <li onmouseover="mudaFoto('_imagens/icone-contato.png')"
+                        onmouseout="mudaFoto('_imagens/especificacoes.png')">
+                        <a href="fale-conosco.html">
+                            Fale conosco
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo-spec">
+            <article id="noticia-principal">
+                <header id="cabecalho-de-artigo">
+                    <hgroup>
+                        <h3>Glass > Especificações</h3>
+                        <h1>Raio-X no Google Glass</h1>
+                        <h2>por Gustavo Guanabara</h2>
+                        <h3 class="direita"><i>Atualizado em 01/Maio/2013</i></h3>
+                    </hgroup>
+                </header>
+                <p>
+                    Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google
+                    Glass.
+                    Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+                </p>
+
+                <figure class="foto-legenda-spec">
+                    <img src="_imagens/glass-esquema-marcado.jpg" alt="">
+                </figure>
+        
+            </article>
+        </section>
+
+      
+
+        <aside id="aside-direita-spec">
+
+            <h1>Tela</h1>
+            <h2>Como o mundo vai aparecer</h2>
+            <p>De acordo com fontes próximas do Google, os oculos
+                vão contar com uma pequena tela de LCD ou AMOLED na
+                parte superior e em frente aos olhos do usuário.
+                Com o uso uma câmera e GPS, você pode se situa, assim como
+                selecionar opções com o movimento da cabeça.
+            </p>
+            <img src="_imagens/det-tela.jpg" alt="">
+
+        </aside>
+
+        <footer id="footer">
+            <p>
+                Copyright 2013 - by Gustavo Guanabara <br />
+                <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> |
+                <a href="http://twiter.com/cursosemvideo" target="_blank">Twitter</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

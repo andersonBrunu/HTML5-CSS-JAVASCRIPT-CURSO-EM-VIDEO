@@ -37,7 +37,6 @@
 
 #cabecalho h2 {
     font-family: 'Titillium Web', sans-serif;
-    ;
     color: #888888;
     font-size: 15pt;
     padding: 0px;
@@ -218,7 +217,7 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
     color: #606060;
     background-color: #dddddd;
     padding: 5px 0px 5px 10px;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 10px 0px;
 }
 
 #cabecalho-de-artigo h1 {
@@ -238,8 +237,12 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
 
 #cabecalho-de-artigo h3 {
     font-size: 12pt;
-    color: #606060;
+    color: #cecece;
 
+}
+#cabecalho-de-artigo h3.direita{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 12pt;
 }
 
 .direita{
@@ -308,6 +311,7 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
     margin-top: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
+
 
 #aside_direita h1 {
     font-family: 'Fonte_Logo',sans-serif;
