@@ -7,100 +7,19 @@
     src: url("/_fontes/bubblegum-sans-regular.otf");
 }
 
-
-#cabecalho{
-    border-bottom: 1px solid black;
-    height: 150px;
-    background: url("/_imagens/glass-logo-peq.jpg" ) no-repeat 0px 80px
+#conteudo {
+    width: 1000px;
+    margin: auto;
 }
 
-#cabecalho h1{
-    font-family: 'Fonte_Logo', sans-serif;
-    font-size: 30pt;
-    color: #888888;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    padding: 0px;
-    margin-bottom: 0px;
+#frameSpec {
+    width: 400px;
+    height: 280px;
+    border: none;
+    overflow: hidden;
+}
+
+iframe#framSpec::-webkit-scrollbar{
+    display: none;
     
-}
-
-#interface{
-    font-family: Arial,sans-serif;
-}
-
-
-p {
-    text-align: justify;
-    text-indent: 50px;
-}
-
-.foto-legenda-spec {
-    display: block;
-    float: left;
-    margin-left: 0px;
-    width: 470px;
-    position: relative;
-    
-}
-
-
-.foto-legenda-spec img {
-    width: 450px;
-    margin-left: 20px;
-    margin-bottom: 0px;
-   
-}
-
-.foto-legenda-spec figcaption:hover {
-    opacity: 1;
-}
-
-#aside-direita-spec {
-    display: block;
-    float: right;
-    width: 300px;
-    margin-right: 60px;
-    margin-top: 0px;
-    margin-bottom: 20PX;
-
-}
-
-#aside-direita-spec img {
-    width: 300px;
-    margin-left: 0px;
-    margin-bottom: 10px;
-}
-
-#aside-direita-spec p {
-    margin-top: 0px;
-    font-size: 10pt;
-    text-indent: 30px;
-
-}
-
-#aside-direita-spec h1 {
-    font-family: 'Fonte_Logo', sans-serif;
-    font-size: 15pt;
-    background-color: #888888;
-    color: white;
-    padding: 0px 0px 0px 5px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    margin-bottom: 0px;
-}
-
-#aside-direita-spec h2 {
-    font-family: Arial, sans-serif;
-    font-size: 13pt;
-    color: #888888;
-    margin-top: 0px;
-}
-
-#footer {
-    /**Para limpar a formatação e ficar  no final do conteudo*/
-    clear: both;
-    border-top: 1px solid #606060;
-}
-
-#footer p {
-    text-align: center;
 }
