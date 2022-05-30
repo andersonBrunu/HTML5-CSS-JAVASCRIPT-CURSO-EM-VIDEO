@@ -301,6 +301,12 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
 
 }
 
+#noticia-principal video#video{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+}
+
 /*----------------Formatação do aside  direito-------------*/
 #aside_direita {
     display: block;
@@ -310,6 +316,13 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
     padding: 10px;
     margin-top: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#aside_direita video#video{
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 
@@ -326,6 +339,8 @@ underline para quando passar o mouse adicionar o sublinhado na opção*/
     font-size: 13pt;
     color: #ffffff;
     padding: 5px;
+  
+    margin-bottom: 0px;
 
 }
 
